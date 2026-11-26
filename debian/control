@@ -1,0 +1,13 @@
+Source: ros-rolling-rmw-unix-socket-cpp
+Section: misc
+Priority: optional
+Maintainer: "Abderahmane BENALI" <benaliabderrahmen88@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ament-cmake-gtest <!nocheck>, ros-rolling-fastcdr, ros-rolling-rcpputils, ros-rolling-rcutils, ros-rolling-rmw, ros-rolling-rosidl-runtime-c, ros-rolling-rosidl-typesupport-cpp <!nocheck>, ros-rolling-rosidl-typesupport-fastrtps-c, ros-rolling-rosidl-typesupport-fastrtps-cpp, ros-rolling-test-msgs <!nocheck>, ros-rolling-tracetools, ros-rolling-ros-workspace
+Homepage: https://github.com/benaliabderrahmane/rmw_unix_socket_cpp#readme
+Standards-Version: 3.9.2
+
+Package: ros-rolling-rmw-unix-socket-cpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-fastcdr, ros-rolling-rcpputils, ros-rolling-rcutils, ros-rolling-rmw, ros-rolling-rosidl-runtime-c, ros-rolling-rosidl-typesupport-fastrtps-c, ros-rolling-rosidl-typesupport-fastrtps-cpp, ros-rolling-tracetools, ros-rolling-ros-workspace
+Description: Lightweight RMW implementation for ROS 2 using Unix domain sockets.
+ Designed for localhost-only communication with minimal resource usage.
